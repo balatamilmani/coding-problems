@@ -9,21 +9,20 @@ package com.balatamilmani.listadder;
 import java.util.LinkedList;
 import java.util.List;
 
-import com.balatamilmani.listadder.LinkedListAdder;
+import org.junit.Test;
 
 import junit.framework.Assert;
-import junit.framework.TestCase;
 
 /**
  * @author Balamurugan Tamilmani
  * Test code for Linked List adder
  */
-public class LinkedListAdderTest extends TestCase {
-
+public class LinkedListAdderTest {
 
 	/**
 	 * Both the Lists are null, Expect Exception
 	 */
+	@Test
 	public void testAddAllNullNotAllowedThrowsException() {
 		List<Integer> listOne = null;
 		List<Integer> listTwo = null;
@@ -37,6 +36,7 @@ public class LinkedListAdderTest extends TestCase {
 	/**
 	 * One List is Empty and other Null, Except Exception
 	 */
+	@Test
 	public void testAddOneListMustContainValueThrowsException() {
 		List<Integer> listOne = new LinkedList<>();
 		List<Integer> listTwo = null;
@@ -50,6 +50,7 @@ public class LinkedListAdderTest extends TestCase {
 	/**
 	 * Both Lists are not Null, however Empty, Expect Exception
 	 */
+	@Test
 	public void testAddBothNotNullListNoValuesThrowsException() {
 		List<Integer> listOne = new LinkedList<>();
 		List<Integer> listTwo = new LinkedList<>();
@@ -64,6 +65,7 @@ public class LinkedListAdderTest extends TestCase {
 	 * First List has values, second List is null, Expect simply First List returned
 	 * 
 	 */
+	@Test
 	public void testAddFirstListValuesSecondNullExpectFirstList() {
 		List<Integer> listOne = new LinkedList<>();
 		List<Integer> listTwo = null;
@@ -83,6 +85,7 @@ public class LinkedListAdderTest extends TestCase {
 	 * Second List has values, First List is null, Expect simply Second List returned
 	 * 
 	 */
+	@Test
 	public void testAddSecondListValuesFirstNullExpectSecondList() {
 		List<Integer> listOne = null;
 		List<Integer> listTwo = new LinkedList<>();
@@ -102,6 +105,7 @@ public class LinkedListAdderTest extends TestCase {
 	/**
 	 * First List has values, second List is not null but Empty, Expect simply First List returned
 	 */
+	@Test
 	public void testAddFirstListValuesSecondNonNullEmptyExpectFirstList() {
 		List<Integer> listOne = new LinkedList<>();
 		List<Integer> listTwo = new LinkedList<>();
@@ -120,6 +124,7 @@ public class LinkedListAdderTest extends TestCase {
 	/**
 	 * Second List has values, First List is not null but Empty, Expect simply Second List returned
 	 */
+	@Test
 	public void testAddSecondListValuesFirstNonNullEmptyExpectSecondList() {
 		List<Integer> listOne = new LinkedList<>();
 		List<Integer> listTwo = new LinkedList<>();
@@ -138,6 +143,7 @@ public class LinkedListAdderTest extends TestCase {
 	/**
 	 * Both Lists are not null, expect its sum returned
 	 */
+	@Test
 	public void testAddBothListHasValueNoCarryOver() {
 		List<Integer> listOne = new LinkedList<Integer>();
 		List<Integer> listTwo = new LinkedList<Integer>();
@@ -167,6 +173,7 @@ public class LinkedListAdderTest extends TestCase {
 	/**
 	 * The reminder is carried over
 	 */
+	@Test
 	public void testAddBothListHasValueWithCarryOver() {
 		List<Integer> listOne = new LinkedList<Integer>();
 		List<Integer> listTwo = new LinkedList<Integer>();
@@ -196,6 +203,7 @@ public class LinkedListAdderTest extends TestCase {
 	/**
 	 * The reminder is carried over. Both Lists same size
 	 */
+	@Test
 	public void testAddBothListHasValueSameSizeWithCarryOver() {
 		List<Integer> listOne = new LinkedList<Integer>();
 		List<Integer> listTwo = new LinkedList<Integer>();
