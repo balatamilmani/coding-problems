@@ -1,9 +1,20 @@
+/*
+ * Copyright (c) 2017. Balamurugan Tamilmani (balamurugan.leo@gmail.com). All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are not permitted.
+ */
 package com.balatamilmani.listadder;
 
 import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
 
+/**
+ * @author Balamurugan Tamilmani
+ * Given Two Linked List's of Integers, this class's static method returns its sum as Linked List
+ * For e.g. [1,2,3], [5,6] will result in [1,7,9]
+ */
 public class LinkedListAdder {
 
 	/**
