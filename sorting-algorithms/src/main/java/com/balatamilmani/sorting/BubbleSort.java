@@ -1,8 +1,18 @@
+/*
+ * Copyright (c) 2017. Balamurugan Tamilmani (balamurugan.leo@gmail.com). All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are not permitted.
+ */
 package com.balatamilmani.sorting;
 
 import java.util.Arrays;
 
-public class BubbleSorting {
+/**
+ * @author Balamurugan Tamilmani
+ *
+ */
+public class BubbleSort {
 
 	public static void main(String[] args) {
 		int unsortedArray[]={12,8,55,3,10,93};
@@ -12,6 +22,14 @@ public class BubbleSorting {
 		System.out.println(Arrays.toString(sort(unsortedArray)));
 	}
 	
+	/**
+	 * Compare First element with Second and Second with Third etc
+	 * Lower index element higher than upper index element exchange them
+	 * First Iteration leaves the highest element in the right most index
+	 * Each subsequent iteration ignore one left most element from being compared
+	 * @param a Given Integer array which needs to be sorted
+	 * @return The sorted array
+	 */
 	private static int[] sort(int a[]){
 		//Loop from second element up to last one
 		boolean swapped = true;

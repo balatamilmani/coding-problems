@@ -1,8 +1,18 @@
+/*
+ * Copyright (c) 2017. Balamurugan Tamilmani (balamurugan.leo@gmail.com). All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are not permitted.
+ */
 package com.balatamilmani.searching;
 
 /**
  * Problem: In the given sorted int array, find indices of Two numbers whose sum is given
  * */
+/**
+ * @author Balamurugan Tamilmani
+ *
+ */
 public class FindIndicesOfTwoNumbersWhoseSumGiven {
 
 	public static void main(String[] args) {
