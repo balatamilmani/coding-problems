@@ -12,7 +12,7 @@ public class InsertionSort {
 		System.out.println(Arrays.toString(sort(unsortedArray)));
 	}
 	
-	private static int[] sort(int a[]){
+	public static int[] sort(int a[]){
 		//Loop from second element upto last one
 		for(int j=1; j<a.length; j++){
 			int val = a[j]; //Everything below j is sorted
